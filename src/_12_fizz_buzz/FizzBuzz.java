@@ -28,11 +28,30 @@ package _12_fizz_buzz;
 public class FizzBuzz {
 public static void main(String[] args) {
 	int numb = (1);
-	if (numb % 3 == 0 ) {
+	for (int i = 0; i < 45; i++) {
+		if (numb % 15 ==0) {
+			System.out.println("FizzBuzz");
+			
+		}	
+	
+		else	if (numb % 3 == 0 ) {
 		System.out.println("Fizz");
 		
 	}
+	else if (numb % 5 == 0) {
+		System.out.println("Buzz");
+	}
 	
+	else{
+	System.out.println(numb);	
+	}
+		numb++;
+	}
+
+	}
+
+
+
 }
-}
+
 
