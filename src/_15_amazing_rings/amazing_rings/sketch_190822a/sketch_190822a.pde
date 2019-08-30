@@ -27,7 +27,7 @@ if(place>0){
 place++;
 }
 else if(place>1000){
-  place++;
+  place--;
 }
  
  for(int q = 0; q < 70; q++){ 
@@ -46,7 +46,7 @@ if(place>0){
 place2--;
 }
 else if(place>1000){
-  place2--;
+  place2++;
 }
 else if(place<0){
  place2++ ;
