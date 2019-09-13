@@ -1,15 +1,35 @@
 package _16_obedient_robot;
 
+import javax.swing.JOptionPane;
+
 import org.jointheleague.graphical.robot.Robot;
 
 public class ROBOT_OBEDIENCE {
 	static Robot RoboFred;
 	public static void main(String[] args) {
-		 RoboFred= new Robot();
+		String shape;
+		RoboFred= new Robot();
 	RoboFred.setPenColor(232,19,19);
 	RoboFred.setSpeed(9999);
-drawStar();
+shape = JOptionPane.showInputDialog("what shape do you want? star, triangle, square, or circle");
+if (shape .equals("star")){
+	
+	drawStar();
 }
+else if (shape .equals ("circle") ) {
+	drawCircle();
+	
+}
+else if (shape.equals ("triangle")) {
+	drawTriangle();
+}
+else if (shape .equals("square")){
+drawSquare();
+}
+	
+}
+	
+
 
 		
 	
@@ -49,9 +69,11 @@ static void drawCircle() {
 	}
 }
 static void drawStar() {
+	
 	RoboFred.turn(-90);
 	RoboFred.move(100);
 	RoboFred.turn(90);
+	
 	RoboFred.penDown();
 	for (int A = 0; A < 5; A++) {
 		
